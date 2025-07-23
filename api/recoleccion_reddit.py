@@ -14,8 +14,8 @@ palabras_irrelevantes = [
 # Configurar conexión a Reddit
 def configurar_reddit():
     return praw.Reddit(
-        client_id='cC7pvAry_jG8EGab6ZGg-Q',            # ← Coloca tu client_id real
-        client_secret='keGRAhP7zMqouiwTGPnvrA6PoxuoUw',          # ← Coloca tu client_secret real
+        client_id='........',            # ← Coloca tu client_id real
+        client_secret='........',          # ← Coloca tu client_secret real
         user_agent='buscador_medico'
     )
 
