@@ -8,7 +8,7 @@ from flask import jsonify
 
 # Configuración general
 HEADERS = {
-    'x-rapidapi-key': "0caaf657damsh2c71a04c9c55bdap1ff046jsn9744079b4d84",
+    'x-rapidapi-key': "........",
     'x-rapidapi-host': "tiktok-scraper7.p.rapidapi.com"
 }
 
