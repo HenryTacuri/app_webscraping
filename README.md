@@ -58,3 +58,13 @@ Para ejecutar correctamente el proyecto, se deben seguir los pasos detallados a 
    ```
 
 ---
+
+
+### **Recolección de datos para entrenar el modelo de IA**
+
+Para ejecutar la recolección de datos realizada en la práctica anterior ejecutamos el archivo de python ```Recoleccion_Datos.py```.
+
+Una vez ejecutado el archivo como resultado obtendremos 3 datasets que ya están procesados y listos para utilizar en el modelo de IA, estos datasets son: ```dataset_limpio_facebook``` - ```dataset_limpio_tiktok``` - ```dataset_limpio_reddit```.
+
+
+Por último se unen todos los datasets
