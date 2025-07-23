@@ -39,7 +39,7 @@ Para ejecutar correctamente el proyecto, se deben seguir los pasos detallados a 
    pip install -r requirements.txt
    ```
 
-6. Dentro de la carpeta del backend (`src/api`), copiar la carpeta `bert_emociones_finetuned`. Esta carpeta es generada previamente en un cuaderno de Jupyter y contiene todo el proceso de entrenamiento del modelo de IA. Dentro de ella se encuentra el modelo BERT ya entrenado y listo para ser utilizado.
+6. Dentro de la carpeta del backend (`src/api`), copiar la carpeta `bert_emociones_finetuned`. Esta carpeta es generada previamente en un cuaderno de Jupyter (Modelo.ipynb) y contiene todo el proceso de entrenamiento del modelo de IA. Dentro de ella se encuentra el modelo BERT ya entrenado y listo para ser utilizado.
 
 ---
 
