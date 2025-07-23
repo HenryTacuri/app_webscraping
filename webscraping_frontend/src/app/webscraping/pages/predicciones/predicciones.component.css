@@ -1,0 +1,70 @@
+.container-predicciones {
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+}
+
+.container_form {
+  background-color: rgb(21, 49, 92);
+  color: white;
+  height: 100%;
+  padding: 10px;
+}
+
+.container_resultados {
+  background-color: rgb(241, 236, 236);
+  width: 100%;
+  display: grid;
+  grid-template-rows: auto auto;
+  gap: 22px;
+  padding: 28px;
+  box-sizing: border-box;
+}
+
+
+.img_estadisticas {
+  width: 850px;
+  height: auto;
+  border-radius: 18px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.11);
+  object-fit: contain;
+  background: #fff;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+.contenido_inferior {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 22px;
+  align-items: start;
+}
+
+.texto_resultados {
+  box-sizing: border-box;    /* <-- Esto asegura que padding se incluya en el cálculo de la altura */
+  height: 508px;
+  overflow-y: auto;
+  padding: 18px;
+  word-break: break-word;
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
+
+.img_bolsa {
+  width: 850px;
+  height: auto;
+  margin: 0 auto;
+  display: block;
+  border-radius: 18px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.11);
+  object-fit: contain;
+  background: #fff;
+}
+
+
+
+

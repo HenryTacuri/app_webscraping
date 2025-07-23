@@ -1,0 +1,79 @@
+<div class="container-predicciones">
+
+
+  <form class="container_form" autocomplete="off" [formGroup]="myForm" (ngSubmit)="prededir()">
+
+    <h5>Análisis de datos</h5>
+
+    <div class="form-check" *ngFor="let item of enfermedades; let i = index">
+      <input
+        class="form-check-input"
+        type="radio"
+        [id]="'radioEnfermedad' + i"
+        [value]="item"
+        formControlName="enfermedad"
+        [value]="item">
+      <label
+        class="form-check-label"
+        [for]="'radioEnfermedad' + i">
+        {{ item }}
+      </label>
+    </div>
+
+
+    <div class="col mb-3">
+      <label class="col-sm-3 col-form-label text-nowrap">Año de publicación:</label>
+      <div class="col-sm-9">
+        <input
+        type="number"
+        class="form-control"
+        formControlName="anio">
+      </div>
+    </div>
+
+      <div class="col mb-3">
+      <label class="col-sm-3 col-form-label text-nowrap">Máx. publicaciones:</label>
+      <div class="col-sm-9">
+        <input
+        type="number"
+        class="form-control"
+        formControlName="max_publi">
+      </div>
+    </div>
+
+    <button type="submit" class="btn btn-light">
+      Buscar
+    </button>
+
+    <button type="button" class="btn btn-light" style="margin-left: 10px;" (click)="nuevaBusquea()">
+      Nueva busqueda
+    </button>
+
+  </form>
+
+  <div class="container_resultados" *ngIf="bolsa_palabras">
+
+
+    <div class="contenido_inferior">
+      <img class="img_estadisticas" [src]="estadisticas" alt="Estadísticas">
+      <div class="texto_resultados">
+        {{ explicacion_predicciones  }}
+      </div>
+    </div>
+
+    <img class="img_bolsa" [src]="bolsa_palabras" alt="Bolsa de Palabras">
+
+  </div>
+
+  <div *ngIf="viewLoader"
+      class="position-fixed top-50 start-50 translate-middle"
+      style="pointer-events: none;">
+    <div class="spinner-border text-primary"
+        role="status"
+        style="width: 3rem; height: 3rem;">
+      <span class="visually-hidden">Cargando…</span>
+    </div>
+  </div>
+
+</div>
+

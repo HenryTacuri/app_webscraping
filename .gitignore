@@ -1,0 +1,7 @@
+webscraping_frontend/node_modules/
+webscraping_frontend/.angular/cache/
+webscraping_frontend/.vscode/
+
+api/__pycache__
+
+
